@@ -1,0 +1,194 @@
+*{
+    font-family: 'inter',sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* Faz o banner ocupar a tela toda e centraliza o conteúdo */
+    height: 500px;
+    display: flex;
+    flex-direction: column; /* Empilha os itens (h1, p, nav) */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+header h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+header p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+nav ul{
+    display: flex; /* Coloca os LIs lado a lado */
+    list-style: none;
+    gap: 15px; /* Espaço entre os botões */
+    padding: 0;
+}
+nav ul li{
+    background-color: rgba(0,0,0,0.5); /* Fundo semi-transparente */
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+.homepage{
+    background-color: rgba(0,0,0,0.5); /* Destaque para o botão "HOMEPAGE" */
+    border-color: white;
+    border: 2px solid white;
+}
+/* FIM DA HEADER */
+
+/* MEIO DO SITE */
+
+/* main */
+.meio{
+    display: flex; /* Coloca Welcome e Sidebar lado a lado */
+    margin: 50px;/* Centraliza o site na tela  */
+    gap: 40px; /* Espaço entre o texto e a barra lateral */
+    padding: 0 20px;
+    width: 1100px;
+    margin: 50px auto; /* Centraliza o container na tela */
+}
+.welcome {
+    flex: 2; /* Ocupa 2 partes do espaço */
+    margin-right: 60px;
+}
+.sidebar {
+    flex: 1; /* Ocupa 1 parte do espaço (mais estreito) */
+    list-style: none;
+}
+.sidebar li {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+}
+.sidebar h3 {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.sidebar p {
+    color: #666;
+    line-height: 1.4;
+    font-size: 13px;
+}
+
+card img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.card{
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card ul{
+    display: flex;
+    display: flex;
+    margin:50px;
+    gap: 20px;
+}
+
+/* Estilo do Botão "More Details" */
+.card a {
+    display: inline-block;
+    align-items: center;
+    background-color: #e8663e; /* Laranja da imagem */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+
+}
+.card li{
+    list-style: none;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    
+}
+.card h2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* --- TIPOGRAFIA --- */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+/* FIM DA MAIN*/
+
+/* FOOTER */
+
+footer {
+    background-color: #1a1a1a; /* Fundo bem escuro */
+    color: #888;              /* Cor do texto cinza claro */
+    padding: 50px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+footer ul {
+    display: flex;            /* Coloca as 3 colunas lado a lado */
+    justify-content: center;  /* Centraliza o grupo no meio da página */
+    gap: 60px;                /* Espaço entre as colunas */
+    list-style: none;         /* Remove as bolinhas da lista */
+    max-width: 1100px;
+    margin: 0 auto;           /* Centraliza o container na tela */
+    padding: 0 20px;
+}
+
+footer li {
+    flex: 1;                  /* Garante que as 3 colunas tenham larguras iguais */
+}
+
+footer h2 {
+    color: white;             /* Títulos em branco */
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer p {
+    border-bottom: 1px solid #333; /* Linha fina entre os posts */
+    padding: 12px 0;               /* Espaçamento interno dos links */
+    font-size: 13px;
+}
+
+/* Remove a borda do último post de cada coluna para ficar limpo */
+footer p:last-child {
+    border-bottom: none;
+}
+
+footer a {
+    color: #888;              /* Cor dos links igual ao texto */
+    text-decoration: none;    /* Remove o sublinhado */
+    transition: color 0.3s ease;
+}
